@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://kit.fontawesome.com/7295b1c265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="photos/images.jpeg" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>TEST ENGINEER</p>
+                <h1>Hi, I'm <span>Venkata Vamsi</span><br>From Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ___________________About_______________________________  -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/passport_size_photo.jpg" alt="Passport Size Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify;">
+                        Aspiring software engineer with a robust academic foundation and a fervent drive for tackling<br>
+                        intricate technical problems. Seeking an entry-level position to leverage my skills and knowledge<br>
+                        for tangible contributions to real-world projects while gaining invaluable practical experience<br>
+                        in software development.
+                    </p> 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>  
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span><b>Manual Testing</b></span><br>Testing to ensure software quality. </li>
+                            <li><span><b>Core Java</b></span><br>Efficient use of Java programming principles in Selenium. </li>
+                            <li><span><b>Selenium WebDriver</b></span><br>Automate the testing of web applications using Selenium WebDriver. </li>
+                            <li><span><b>Oracle SQL</b></span><br>Extracted and manipulated data from databases. </li>
+                            <li><span><b>API Testing (Basics)</b></span><br>Verifying API functionality to ensure seamless integration. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span><b>Fresher</b></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span><b>2024</b></span><br>Software Testing at Qspiders</li>
+                            <li><span><b>2020-2024</b></span><br>BTech (Computer Science and Engineering in AI) at Parul University </li>
+                            <li><span><b>2018-2020</b></span><br>HSC (MPC) at BIEAP</li>
+                            <li><span><b>2020</b></span><br>SSC at BSEAP </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- _____________________services________________________________ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>Manual Testing</h2>
+                    <p>Manually executing test cases to identify defects in software.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Core Java</h2>
+                    <p>Building software applications and efficiently developing Selenium automation scripts using Java.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>Automated Tests with Selenium</h2>
+                    <p>Using the Selenium automation framework to create scripts that can automatically execute test cases.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Writing SQL Queries</h2>
+                    <p>Creating and executing Structured Query Language (SQL) commands to interact with databases.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-solid fa-check"></i>
+                    <h2>Performing API Testing</h2>
+                    <p>Testing the functionality of APIs using Postman.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- _______________________portfolio_____________________________-->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="photos/Brain.png" alt="Brain Tumor Detection">
+                    <div class="layer">
+                        <h3>Brain Tumor Detection Code</h3>
+                        <p>Detecting brain tumors using machine learning involves processing MRI scans or similar medical imaging data.</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- _______________________contact_____________________________-->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>venkatavamsipinnaka@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6304384798</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vamsi-pinnaka-a4417119a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/pinnaka_vamsi?t=RRhyt_4EfLUm5srldFW6Tw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/vvamsi.pinnka?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vamsipinnaka?igsh=ZGVja2h3ZWFudWUw"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="photos/QA_vamsi.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vamsi.   <i class="fa-solid fa-p"></i><i class="fa-solid fa-v"></i></p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+var menuItems = sidemenu.querySelectorAll("li a");
+
+function openmenu() {
+    sidemenu.style.right = "0"; /* Display the menu */
+}
+
+function closemenu() {
+    sidemenu.style.right = "-75%"; /* Hide the menu off-screen by 75% */
+}
+
+// Add event listener to each menu item
+menuItems.forEach(function(item) {
+    item.addEventListener("click", closemenu);
+});
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRRi3EnX7qkqm1Fuu0gnWvtgtJyFNw3oO0riaJNQdyF4BjjPbIWDRd8stFvvQ1CLZq/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Data sent successfully";
+                setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
+</body>
+</html>
